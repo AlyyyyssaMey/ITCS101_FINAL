@@ -55,3 +55,86 @@ def sub5menu():
 
 def sub6menu():
 	print("\n\t-----\n\tLISTS\n\t-----\n\t1 - Definition\n\t2 - Code with Examples\n\t3 - Back to main menu")
+
+def defie1():
+    print("\n\tPRINT STATEMENTS")
+    print("Python print() function prints the message to the screen or any other standard output device.")
+
+def defie2():
+    print("\n\tOPERATORS")
+    print("_Python Operators_\nOperators are used to perform operations on variables and values.")
+
+def arith():
+    print("\n\tARITHMETIC OPERATORS")
+    print("Arithmetic operators are used with numeric values to perform common mathematical operations (+, -, , /, %, *, //)")
+    print()
+    print("•••••• Examples ••••••")
+    print("\n\n\t------\n\tOUTPUT\n\t------")
+    print(200 + 52)
+    print(6*5)
+    print(7//7)
+    print("\n\t-----\n\tINPUT\n\t-----")
+    num1 = "200"
+    num2 = "52"
+    print(f"print({num1} + {num2})")
+    num1 = "6"
+    num2 = "5"
+    print(f"print({num1}*{num2})")
+    num1 = "7"
+    num2 = "7"
+    print(f"print({num1}//{num2})")
+
+def assignn():
+    print("\n\tASSIGNMENT OPERATORS")
+    print("Assignment operators are used to assign values to variables 😊, +=, -=, *=, /=, etc.)")
+    print()
+    print("•••••• Examples ••••••")
+    print("\n\n\t------\n\tOUTPUT\n\t------")
+    letter = ""
+    a = input("Enter a letter: ")
+    letter  += a 
+    b = input("Enter a letter: ")
+    letter  += b
+    c = input("Enter a letter: ")
+    letter  += c
+    d = input("Enter a letter: ")
+    letter  += d
+    print(letter)
+    print("\n\t-----\n\tINPUT\n\t-----")
+    print('letter = " "\na = input("Enter a letter: ")\nletter += a\nb = input("Enter a letter: ")\nletter += b\nc = input("Enter a letter: ")\nletter += c\nd = input("Enter a letter: ")\nletter += d\nprint(letter)')
+
+def compar():
+    print("\n\tCOMPARISON OPERATORS")
+    print("Comparison operators are used to compare two values (==, !=, <, >, <=, >=)")
+    print()
+    print("•••••• Examples ••••••")
+    print("\n\n\t------\n\tOUTPUT\n\t------")
+    age = input("Enter your age:")
+
+    if age.isnumeric():
+	    if 12 >= int(age) >= 0:
+		    print("Child")
+	    elif 13 <= int(age) <=19:
+		    print("Teen")
+	    elif 20 <= int(age) <=59:
+		    print("Adult")
+	    elif 100 >= int(age) >=60:
+		    print("Senior")
+	    else:
+		    print("Invalid input")
+    print("\n\t-----\n\tINPUT\n\t-----")
+    print('if age.isnumeric():\nif 12 >= int(age) >= 0:\n   print("Child")\nelif 13 <= int(age) <=19:\n   print("Teen")\nelif 20 <= int(age) <=59:\n   print("Adult")\nelif 100 >= int(age) >=60:\n   print("Senior")\nelse:\n   print("Invalid input")')
+    
+def logic():
+    print("\n\tLOGICAL OPERATORS")
+    print("Logical operators are used to combine conditional statements (and, or, not)")
+    print()
+    print("•••••• Examples ••••••")
+    print("\n\n\t------\n\tOUTPUT\n\t------")
+    a = "Good"
+    b = "Day"
+    print(a and b)
+    print(a or b)
+    print(a and a)
+    print("\n\t-----\n\tINPUT\n\t-----")
+    print('a = "Good"\nb = "Day"\nprint(a and b)\nprint(a or b)\nprint(a and a)')

@@ -419,3 +419,73 @@ while True:
                     print("\nStaying here...")
             else:
                 print("\nPlease enter the given choices.")
+    elif main_menu == "4":
+        while True:
+            sub4menu()
+            ask4 = input("\nEnter choice here: ")
+            if ask4 == "1":
+                defi4()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to loops options...")
+                else:
+                    break
+            elif ask4 == "2":
+                loopi()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to loops options...")
+                else:
+                    break
+            elif ask4 == "3":
+                louwie()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to loops options...")
+                else:
+                    break
+            elif ask4 == "4":
+                nestie()
+                nestie_code()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to loops options...")
+                else:
+                    break
+            elif ask4 == "5":
+                cont = input("\nDo you want to go back? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to main menu.....")
+                    break
+                else:
+                    print("\nStaying here...")
+            else:
+                print("\nPlease enter the given choices.")
+    elif main_menu == "5":
+        while True:
+            sub5menu()
+            ask5 = input("\nEnter choice here: ")
+            if ask5 == "1":
+                defie5()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to functions options...")
+                else:
+                    break
+            elif ask5 == "2":
+                defie5_code()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to functions options...")
+                else:
+                    break
+            elif ask5 == "3":
+                print()
+                cont = input("Do you want to go back? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to main menu.....")
+                    break 
+                else:
+                    print("\nStaying....")
+            else:
+                print("\nPlease enter the given choices.")

@@ -489,3 +489,36 @@ while True:
                     print("\nStaying....")
             else:
                 print("\nPlease enter the given choices.")
+    elif main_menu == "6":
+        while True:
+            sub6menu()
+            ask6 = input("\nEnter choice here: ")
+            if ask6 == "1":
+                defie6()
+                cont = input("\nDo you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to lists options...")
+                else:
+                    break 
+            elif ask6 == "2":
+                defie6_code()
+                print()
+                cont = input("Do you want to continue? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to lists options...")
+                else:
+                    break 
+            elif ask6 == "3":
+                cont = input("\nDo you want to go back? (Yes / No): ")
+                if cont.lower() == "yes":
+                    print("\nBack to main menu.....")
+                    break  
+                else:
+                    print("\nStaying....")
+            else:
+                print("\nPlease enter the given choices.")
+    elif main_menu == "7":
+        print("\nThe program is now terminated Thank you for stopping by.")
+        break 
+    else:
+        print("Please enter only from the given choices.")

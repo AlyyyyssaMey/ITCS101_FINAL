@@ -7,13 +7,13 @@ student_info = {
     "_year_": "2024"
 }
 
-def p():
+def hello():
 	print("\n•••••• Examples ••••••\n\n\t------\n\tOUTPUT\n\t------")
 	print("Hello World")
 	print("Alyssa")
 	print("29")
 
-def pri():
+def world():
 	print("\n\t-----\n\tINPUT\n\t-----")
 	name = "Hello World"
 	print(f"print('{name}')")
@@ -320,8 +320,8 @@ while True:
                 else:
                     print("Please enter the given option (Yes or No)")
             elif ask1 == "2":
-                p()
-                pri()
+                hello()
+                world()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to print statements options")

@@ -1,7 +1,11 @@
-_author_ = "ALYSSA MAE DURAL HUFANA"  
-_course_ = "BSIT-2A"
-_subject_ = "ITCS-102"
-_year_ = "2024"
+
+# Student information
+student_info = {
+    "_author_": "ALYSSA MAE DURAL HUFANA",
+    "_course_": "BSIT-2A",
+    "_subject_": "ITCS-102",
+    "_year_": "2024"
+}
 
 def p():
 	print("\n•••••• Examples ••••••\n\n\t------\n\tOUTPUT\n\t------")
@@ -20,50 +24,51 @@ def pri():
 	num = "29"
 	print(f"print('{num}')")
 
-def menu():
-	print("\t\t\t\tWELCOME TO THE MENU OF PYTHON COMPILATION")
-	print("\n\nA compilation about PYTHON language. It is composed of different components in python such as variables, print statements, functions, loops, and many more.\nPython is a high-level, general-purpose programming language. This means it's designed to be easy to read and write, and it can be used for a wide variety of tasks. It's known for its clear syntax, which resembles natural language, making it easier for beginners to learn.\nIt's also very popular in the tech world, used for web development, data science, machine learning, scripting, and more. So, please fasten your seatbelt as we take a ride on this Python's journey. Hang on tight!")
-	print("\n\n\t\tMAIN MENU")
-	print()
-	print("\t0 - Introduction \n\t1 - Print Statements\n\t2 - Operators\n\t3 - Conditionals\n\t4 - Loops\n\t5 - Functions\n\t6 - Lists\n\t7 - Exit")
-
-def menu1():
-    print("       \n\t•Main Menu•")
+# --- Menu Functions ---
+def display_menu():
+    print("\t\t\t\tWELCOME TO THE MENU OF PYTHON COMPILATION")
+    print("\n\nA compilation about PYTHON language. It is composed of different components in python such as variables, print statements, functions, loops, and many more.\nPython is a high-level, general-purpose programming language. This means it's designed to be easy to read and write, and it can be used for a wide variety of tasks. It's known for its clear syntax, which resembles natural language, making it easier for beginners to learn.\nIt's also very popular in the tech world, used for web development, data science, machine learning, scripting, and more. So, please fasten your seatbelt as we take a ride on this Python's journey. Hang on tight!")
+    print("\n\n\t\tMAIN MENU")
     print()
-    print("0 - Introduction\n1 - Print Statements\n2 - Operators\n3 - Conditionals\n4 - Loops\n5 - Functions\n6 - Lists\n7 - Exit")
-    
-def sub1menu():
-	print("\n\t----------------\n\tPRINT STATEMENTS\n\t----------------")
-	print("\t1 - Definition\n\t2 - Code with examples\n\t3 - Back to main menu")
+    print("\t0 - Introduction \n\t1 - Print Statements\n\t2 - Operators\n\t3 - Conditionals\n\t4 - Loops\n\t5 - Functions\n\t6 - Lists\n\t7 - Exit")
 
-def sub2menu():
+def display_introduction():
+    print("\n\t^^^\n\tINTRODUCTION\n\t^^^")
+    print("\nPython is a popular programming language. It was created by Guido van Rossum, and released in 1991. It is used for web development (server-side), software development, mathematics, and system scripting.")
+
+def display_print_statements():
+    print("\n\t----------------\n\tPRINT STATEMENTS\n\t----------------")
+    print("\t1 - Definition\n\t2 - Code with examples\n\t3 - Back to main menu")
+
+def display_operators():
     print("\n\t---------\n\tOPERATORS\n\t---------")
     print("\t1 - Definition\n\t2 - Arithmetic Operators\n\t3 - Assignment Operators\n\t4 - Comparison Operators\n\t5 - Logical Operators\n\t6 - Back to main menu")
-    
-def sub3menu():
+
+def display_conditionals():
     print("\n\t------------\n\tCONDITIONALS\n\t------------")
     print("\t1 - Definition\n\t2 - Code with example\n\t3 - Nested Condition\n\t4 - Back to main menu")
 
-def sub4menu():
+def display_loops():
     print("\n\t-----\n\tLOOPS\n\t-----")
     print("\t1 - Definition\n\t2 - For Loop\n\t3 - While Loop\n\t4 - Nested for Loop\n\t5 - Back to main menu")
 
-def sub5menu():
+def display_functions():
     print("\n\t---------\n\tFUNCTIONS\n\t---------")
     print("\t1 - Definition\n\t2 - Code with Examples\n\t3 - Back to main menu")
 
-def sub6menu():
-	print("\n\t-----\n\tLISTS\n\t-----\n\t1 - Definition\n\t2 - Code with Examples\n\t3 - Back to main menu")
+def display_lists():
+    print("\n\t-----\n\tLISTS\n\t-----\n\t1 - Definition\n\t2 - Code with Examples\n\t3 - Back to main menu")
 
-def defie1():
+# --- Definition Functions ---
+def print_statements_definition():
     print("\n\tPRINT STATEMENTS")
     print("Python print() function prints the message to the screen or any other standard output device.")
 
-def defie2():
+def operators_definition():
     print("\n\tOPERATORS")
     print("_Python Operators_\nOperators are used to perform operations on variables and values.")
 
-def arith():
+def arithmetic_operators():
     print("\n\tARITHMETIC OPERATORS")
     print("Arithmetic operators are used with numeric values to perform common mathematical operations (+, -, , /, %, *, //)")
     print()
@@ -83,7 +88,7 @@ def arith():
     num2 = "7"
     print(f"print({num1}//{num2})")
 
-def assignn():
+def assignment_operators():
     print("\n\tASSIGNMENT OPERATORS")
     print("Assignment operators are used to assign values to variables 😊, +=, -=, *=, /=, etc.)")
     print()
@@ -102,7 +107,7 @@ def assignn():
     print("\n\t^\n\tINPUT\n\t^")
     print('letter = " "\na = input("Enter a letter: ")\nletter += a\nb = input("Enter a letter: ")\nletter += b\nc = input("Enter a letter: ")\nletter += c\nd = input("Enter a letter: ")\nletter += d\nprint(letter)')
 
-def compar():
+def comparison_operators():
     print("\n\tCOMPARISON OPERATORS")
     print("Comparison operators are used to compare two values (==, !=, <, >, <=, >=)")
     print()
@@ -124,7 +129,7 @@ def compar():
     print("\n\t^\n\tINPUT\n\t^")
     print('if age.isnumeric():\nif 12 >= int(age) >= 0:\n   print("Child")\nelif 13 <= int(age) <=19:\n   print("Teen")\nelif 20 <= int(age) <=59:\n   print("Adult")\nelif 100 >= int(age) >=60:\n   print("Senior")\nelse:\n   print("Invalid input")')
     
-def logic():
+def logical_operators():
     print("\n\tLOGICAL OPERATORS")
     print("Logical operators are used to combine conditional statements (and, or, not)")
     print()
@@ -138,11 +143,11 @@ def logic():
     print("\n\t^\n\tINPUT\n\t^")
     print('a = "Good"\nb = "Day"\nprint(a and b)\nprint(a or b)\nprint(a and a)')
 
-def defie3():
+def conditionals_definition():
     print("\n\tCONDITIONALS")
     print("Conditional statements (if, else, and elif) are fundamental programming constructs that allow you to control\nthe flow of your program based on conditions that you specify. They provide a\nway to make decisions in your program and execute different code based on those decisions.")
     
-def defie3_code():
+def conditionals_code():
     print("\n•••••• Example ••••••")
     print("\n\n\t^\n\tOUTPUT\n\t^")
     print("\nThe program will break if you enter a letter.")
@@ -164,10 +169,10 @@ def defie3_code():
 
     print('isOn = True\nsum = 0\n\nwhile isOn == True:\n   num = input("Enter a number: ")\n\n   if num.isnumeric():\n     sum += int(num)\n   else:\n     break\nprint(f"The total is {sum}")')
 
-def nest():
-	print("\nThe nested if statements in Python are the nesting of an if\nstatement inside another if statement with or without an else statement.")
+def nested_conditionals():
+    print("\nThe nested if statements in Python are the nesting of an if\nstatement inside another if statement with or without an else statement.")
 
-def nest_code():
+def nested_conditionals_code():
     print("\n•••••• Example ••••••")
     print("\n\n\t^\n\tOUTPUT\n\t^\nPurchasing an item program.")
     item_price = input("\nEnter the price of your item here: ")
@@ -187,11 +192,11 @@ def nest_code():
     print("\n\t^\n\tINPUT\n\t^")
     print('\nitem_price = input("Enter the price of your item here: ")\nqty = input("How many did you buy? ")if item_price.isnumeric() and qty.isnumeric():\n   total_price = int(item_price) * int(qty)\n   if total_price >= 100:\n     discount = total_price * 0.10\n     discounted_price = total_price - discount\n     print(f"Hello! We are happy to inform you that your purchase is discounted! The total price of your product is {total_price}. The discounted price is now {discounted_price}")\n   else:\n    print("You availed the original price")\nelse:\n   print("Please the numeric value of your purchase/s")')
 
-def defi4():
+def loops_definition():
     print("\n\tLOOPS")
     print("A loop is an instruction that repeats multiple times as long as some condition is met.")
 
-def loopi():
+def for_loop():
     print("\n•For Loop - A for loop in Python is used to iterate over a sequence (list, tuple, set, dictionary, and string).")
     print()
     print("•••••• Example ••••••")
@@ -201,13 +206,13 @@ def loopi():
     print("\n\t^\n\tINPUT\n\t^")
     print('\nfor b in range (1, 13):\n   print("ROSE")')
 
-def loupie():
-	print("\nWhile Loop - The while loop is used to execute a set of statements as long as a condition is true.")
+def while_loop():
+    print("\nWhile Loop - The while loop is used to execute a set of statements as long as a condition is true.")
 
-def nestie():
-	print("\nNested For Loop - If a loop exists inside the body of another loop, it is called a nested loop.")
-    
-def nestie_code():
+def nested_for_loop():
+    print("\nNested For Loop - If a loop exists inside the body of another loop, it is called a nested loop.")
+
+def nested_for_loop_code():
     print("\n•••••• Example ••••••")
     print("\n\n\t^\n\tOUTPUT\n\t^")
     print()
@@ -221,11 +226,11 @@ def nestie_code():
     print("\n\t^\n\tINPUT\n\t^")
     print('\nfor x in range (10):\n   for y in range (10):\n     if y >= x:\n   print("*", end=" ")\n     else:\n   print(" ", end=" ")\n    print()')
 
-def defie5():
+def functions_definition():
     print("\n\tFUNCTIONS")
     print("A function is a block of code which only runs when it is called.")
     
-def defie5_code():
+def functions_code():
     print("\nIn python, we create a function using the 'def' keyword.")
     print("\n•••••• Example ••••••")
     print("\n\n\t^\n\tOUTPUT\n\t^")
@@ -235,11 +240,11 @@ def defie5_code():
     print("\n\t^\n\tINPUT\n\t^")
     print('def hello():\n   print("Hello, Good Day! How are you today?")\nhello()')
 
-def defie6():
+def lists_definition():
     print("\n\tLISTS")
     print("Lists are used to store multiple items in a single variable.")
     
-def defie6_code():
+def lists_code():
     print("\n•••••• Example ••••••")
     print("\n\n\t^\n\tOUTPUT\n\t^")
     hi = ["hi" , "hello" , "hi"]
@@ -270,7 +275,7 @@ def sub_intro():
 start = input("Hello, Good day! Would you like to start the program? (Yes / No): ")
 if start.lower() == "yes":
     print("\nGreat! The program will now start. Please wait a little while")
-    menu()
+    display_menu()
 else:
     print("\nThe program is now terminated. Thank you for stopping by.")
     exit()
@@ -302,10 +307,10 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "1":
         while True:
-            sub1menu()
+            display_print_statements()
             ask1 = input("\nEnter choice here: ")
             if ask1 == "1":
-                defie1()
+                print_statements_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to options")
@@ -333,38 +338,38 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "2":
         while True:
-            sub2menu()
+            display_operators()
             ask2 = input("\nEnter choice here: ")
             if ask2 == "1":
-                defie2()
+                operators_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to operators options")
                 else:
                     break
             elif ask2 == "2":
-                arith()
+                arithmetic_operators()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to operators options")
                 else:
                     break
             elif ask2 == "3":
-                assignn()
+                assignment_operators()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to operators options")
                 else:
                     break
             elif ask2 == "4":
-                compar()
+                comparison_operators()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("Back to operators options")
                 else:
                     break
             elif ask2 == "5":
-                logic()
+                logical_operators()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to operators options")
@@ -381,11 +386,11 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "3":
         while True:
-            sub3menu()
+            display_conditionals()
             ask3 = input("\nEnter choice here: ")
             if ask3 == "1":
                 print()
-                defie3()
+                conditionals_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to conditionals options")
@@ -393,7 +398,7 @@ while True:
                     break
             elif ask3 == "2":
                 print()
-                defie3_code()
+                conditionals_code()
                 print()
                 cont = input("Do you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
@@ -402,8 +407,8 @@ while True:
                     break
             elif ask3 == "3":
                 print()
-                nest()
-                nest_code()
+                nested_conditionals()
+                nested_conditionals_code()
                 print()
                 cont = input("Do you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
@@ -422,32 +427,32 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "4":
         while True:
-            sub4menu()
+            display_loops()
             ask4 = input("\nEnter choice here: ")
             if ask4 == "1":
-                defi4()
+                loops_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to loops options")
                 else:
                     break
             elif ask4 == "2":
-                loopi()
+                for_loop()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to loops options")
                 else:
                     break
             elif ask4 == "3":
-                loupie()
+                while_loop()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to loops options")
                 else:
                     break
             elif ask4 == "4":
-                nestie()
-                nestie_code()
+                nested_conditionals()
+                nested_conditionals_code()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to loops options")
@@ -464,17 +469,17 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "5":
         while True:
-            sub5menu()
+            display_functions()
             ask5 = input("\nEnter choice here: ")
             if ask5 == "1":
-                defie5()
+                functions_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to functions options")
                 else:
                     break
             elif ask5 == "2":
-                defie5_code()
+                functions_code()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to functions options")
@@ -492,17 +497,17 @@ while True:
                 print("\nPlease enter the given choices.")
     elif main_menu == "6":
         while True:
-            sub6menu()
+            display_lists()
             ask6 = input("\nEnter choice here: ")
             if ask6 == "1":
-                defie6()
+                lists_definition()
                 cont = input("\nDo you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
                     print("\nBack to lists options")
                 else:
                     break 
             elif ask6 == "2":
-                defie6_code()
+                lists_code()
                 print()
                 cont = input("Do you still want to continue? (Yes / No): ")
                 if cont.lower() == "yes":
